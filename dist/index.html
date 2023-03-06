@@ -8,43 +8,44 @@
     <title>Calcuadora</title>
 </head>
 <body>
-    <header class="resultado">
-        <h1>0</h1>
-    </header>
-    <main>
-        <div>
-            <button class="limpar" class="botaoCinzaClaro">AC</button>
-            <button class="maisMenos" class="botaoCinzaClaro">+/-</button>
-            <button class="porcentgem" class="botaoCinzaClaro">%</button>
-            <button class="dividir" class="botaoLaranja">º/º</button>
+    <div class="container">
+       
+        <div class="result">
+            <span>0</span>
         </div>
 
-        <div>
-            <button class="numbers">7</button>
-            <button class="numbers">8</button>
-            <button class="numbers">9</button>
-            <button class="multiplicar" class="botaoLaranja">X</button>
+        <div class="buttons">
+            <button class="item item1 clear" >AC</button>
+            <button class="item item1 negative" value="+/-">+/-</button>
+            <button class="item percent sing" value="%">%</button>
+            <button class="item item3 sign" value="/">/</button>
+
+            <button class="item numbers" value="7">7</button>
+            <button class="item numbers" value="8">8</button>
+            <button class="item numbers" value="9">9</button>
+
+            <button class="item item3 sign" value="x">X</button>
+
+            <button class="item numbers" value="4">4</button>
+            <button class="item numbers" value="5">5</button>
+            <button class="item numbers" value="6">6</button>
+
+            <button class="item item3 sign" value="-">-</button>
+
+            <button class="item numbers" value="1">1</button>
+            <button class="item numbers" value="2">2</button>
+            <button class="item numbers" value="3">3</button>
+
+            <button class="item item3 sign" value="+">+</button>
+
+            <button class="item itemZero numbers" value="0">0</button>
+
+            <button class="item comma">,</button>
+            <button class="item item3 equals">=</button>
         </div>
 
-        <div>
-            <button class="numbers">4</button>
-            <button class="numbers">5</button>
-            <button class="numbers">6</button>
-            <button class="subtrair" class="botaoLaranja">-</button>
-        </div>
 
-        <div>
-            <button class="numbers">1</button>
-            <button class="numbers">2</button>
-            <button class="numbers">3</button>
-            <button class="somar" class="botaoLaranja">+</button>
-        </div>
-
-        <div>
-            <button class="numbers">0</button>
-            <button class="numbers">,</button>
-            <button class="igual" class="botaoLaranja">=</button>
-        </div>
-    </main>
+    </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

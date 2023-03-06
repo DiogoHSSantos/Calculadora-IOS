@@ -3,36 +3,96 @@
     --branco: #ffffff;
     --cinzaClaro: #a5a5a5;
     --cinzaEscuro: #333333;
-    --laranja: #f29938;
+    --laranja: #ff9625;
 }
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
-body{
+html, body, #fullheight {
+    min-height:100% !important; 
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     background: var(--preto);
 }
 
-header{
-    color: #ffffff;
-    display: flex;
-    justify-content: end;
-    align-items:flex-end;
+.container{
     height: 100%;
+    background: var(--preto);
 }
-main{
+
+.result{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: var(--branco);
+    height: 39%;
 }
-main > div > button{
-    padding: 30px;
-    font-size: 2em;
-    border-radius: 50%;
+.result span{
+    margin-right: 20px;
+    font-size: 100px;
+    justify-self: flex-end;
 }
-main > div{
+
+.buttons{
+    width: 100%;
+    height: 60%;
+    background: var(--preto);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.item{
     display: flex;
-    justify-content: space-arround;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--branco);
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+.percent{
+    background: var(--cinzaClaro);
+    border: none;
+    color: var(--preto);
+}
+.item1{
+    background: var(--cinzaClaro);
+    color: var(--preto);
+    border: none;
+}
+.item3{
+    background: var(--laranja);
+    color: var(--branco);
+    border: none;
+}
+
+.numbers, .comma{
+    background: var(--cinzaEscuro);
+    color: var(--branco);
+    border: none;
+}
+
+.itemZero{
+    background: var(--cinzaEscuro);
+    width: 200px;
+    border-radius: 100px;
+    grid-column: span 2;
+    border: none;
+}
+
+.selectedSigh{
+    background: var(--branco);
+    color: var(--laranja);
+}
+
+.changedStyles {
+    font-size: 10px;
 }
